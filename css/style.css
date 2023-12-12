@@ -1,0 +1,44 @@
+/*
+*Dieprood: #E32636
+Goudaccenten: #FFD700
+Zwart: #000000
+Crèmewit: #FFF5E1
+*
+*
+*/
+
+header
+{
+    background-color: #E32636;
+    color: #FFF5E1;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav#primary-nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav#primary-nav ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFD700;
+    padding: 0 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+nav#primary-nav ul li a.current-page,
+nav#primary-nav ul li a:hover,
+nav#primary-nav ul li a:focus
+{
+    background-color: #FFF5E1;
+    color: #E32636;
+}
