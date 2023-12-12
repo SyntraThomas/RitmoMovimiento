@@ -22,7 +22,34 @@
         </nav>
     </header>
     <main>
-
+        <section class="center-content">
+            <form action="#">
+                <div class="form-group">
+                    <label for="ipt-naam">Naam:</label>
+                    <input type="text" name="naam" id="ipt-naam">
+                </div>
+                <div class="form-group">
+                    <label for="ipt-mail">E-mailadres:</label>
+                    <input type="email" name="email" id="ipt-mail">
+                </div>
+                <div class="form-group">
+                    <label for="ipt-onderwerp">Onderwerp:</label>
+                    <input type="text" name="onderwerp" id="ipt-onderwerp" list="onderwerptopics">
+                    <datalist id="onderwerptopics">
+                        <option value="Dansles"></option>
+                        <option value="Inschrijving"></option>
+                        <option value="Varia"></option>
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="ipt-bericht">Bericht:</label>
+                    <textarea name="bericht" id="ipt-bericht" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Verzenden">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy;2023 - Syntra Midden-Vlaanderen - Front-end dev 1</p>
